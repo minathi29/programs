@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+   printf("Enter a number from 1 to 5: ");
+   int x;
+   scanf("%d", &x);
+   switch(x)
+   {
+       case 1: printf("Burger \nRs 129");
+        break;
+       case 2: printf("Fries \nRs 99");
+        break;
+       case 3: printf("Sandwich \nRs 149");
+        break;
+       case 4: printf("Pizza \nRs 239");
+        break;
+       case 5: printf("Pasta\n179");
+        break;
+       default:printf("Invalid input");
+       
+   }
+    return 0;
+}
