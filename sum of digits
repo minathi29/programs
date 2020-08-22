@@ -1,0 +1,23 @@
+
+void main()
+{
+    printf("Enter a number: ");
+    int x;
+    int sum=0;
+    scanf("%d",&x);
+    sum=digitsum(x);
+     printf("%d", sum);
+}
+
+int digitsum(int x)
+{
+    if (x<=0)
+    {
+      return 0;
+    }
+    else
+    {
+       return (x% 10 + digitsum (x / 10));
+    }
+    
+}
